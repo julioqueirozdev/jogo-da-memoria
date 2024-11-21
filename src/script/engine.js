@@ -39,16 +39,19 @@ function checkMath(){
     if(openCards[0].innerHTML === openCards[1].innerHTML){
         openCards[0].classList.add('boxMatch');
         openCards[1].classList.add('boxMatch');
+        console.log('gênia')
     } else{
         openCards[0].classList.remove('boxOpen');
         openCards[1].classList.remove('boxOpen');
+        console.log('Burra!')
     }
 
     openCards = []
 
-    if(document.querySelectorAll('.boxMatch').length === emojis.lenght){
+    if(document.querySelectorAll('.boxMatch').length === emojis.length){
         alert('você venceu!')
     }
+
 }
 
 
